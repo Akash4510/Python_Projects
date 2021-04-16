@@ -144,16 +144,17 @@ while True:
         display_board(board_list)
         win = win_check(board_list, mark)
         draw = draw_check(board_list)
-        if draw:
-            print('\n')
-            print("It's a DRAW")
-            print('\n')
-            break
         if win:
             print('\n')
             print("Congratulations! Player1(X) wins the game.")
             print('\n')
             break
+        if draw:
+            print('\n')
+            print("It's a DRAW")
+            print('\n')
+            break
+        
 
         print('\n')
         print("Player2 (O)'s turn")
@@ -164,16 +165,16 @@ while True:
         display_board(board_list)
         win = win_check(board_list, mark)
         draw = draw_check(board_list)
-        if draw:
-            print('\n')
-            print("It's a DRAW")
-            print('\n')
-            break
         if win:
             print('\n')
             print("Congratulations! Player2(O) wins the game.")
             print('\n')
             break
-
+        if draw:
+            print('\n')
+            print("It's a DRAW")
+            print('\n')
+            break
+        
     if not replay():
         break
